@@ -38,5 +38,5 @@ In the course, you'll:
 Run the main demo script to see all lessons in action:
 
 ```bash
-python debugging.py
+python debugging_original.py
 
