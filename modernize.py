@@ -16,6 +16,10 @@ client = OpenAI(
     api_key=key
 )
 
+# # ---------------------------------------------------------------------------
+# # CLIP (Modernizing a Legacy Prompt)
+# # ---------------------------------------------------------------------------
+
 # Legacy Prompt
 legacy_prompt = """
 Extract customer complaints from these reviews:
