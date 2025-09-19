@@ -37,8 +37,7 @@ try:
                                         'startups as a numbered list in plain text, one sentence per item, under 20 words each. '
                                         'No markdown, no intro or outro."'}
         ],
-        logprobs=True,
-        max_tokens=150
+        logprobs=True
     )
 
     print("\n=== Model Response ===")

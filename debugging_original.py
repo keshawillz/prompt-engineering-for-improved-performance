@@ -33,10 +33,10 @@ try:
         model="gpt-4.1",
         messages=[
             {"role": "system", "content": "You are a helpful assistant."},
-            {"role": "user", "content": "List three benefits of cloud computing for startups."}
+            {"role": "user", "content": "I new to cloud computing. Help me understand "
+                                        "three benefits of cloud computing for startups."}
         ],
-        logprobs=True,
-        max_tokens=150
+        logprobs=True
     )
 
     print("\n=== Model Response ===")
