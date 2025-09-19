@@ -1,3 +1,13 @@
+"""
+Prompt Engineering for Improved Performance
+All examples use Python and the OpenAI client.
+
+Prereqs:
+  pip install openai
+  pip install python-dotenv
+  export API_KEY = os.environ[...]
+"""
+
 import os
 from openai import OpenAI
 from dotenv import load_dotenv, find_dotenv

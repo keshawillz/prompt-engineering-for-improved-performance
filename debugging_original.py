@@ -47,7 +47,11 @@ try:
     print(f"Token usage: {response.usage}")
 
     print("\n=== Logprobs (confidence scores) ===")
-    print(response.choices[0].logprobs)       
+    # Show logprobs for first few tokens only
+    if response.choices[0].logprobs and response.choices[0].logprobs.content:
+        print("\n=== Logprobs (first 5 tokens) ===")
+        for token_info in response.choices[0].logprobs.content[:5]:
+            print(f"Token: {token_info.token}, Logprob: {token_info.logprob}")    
 
 except Exception as e:
     print(f"[Error] API call failed: {e}")
